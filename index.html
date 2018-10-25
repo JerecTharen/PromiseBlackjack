@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="main.js">
+
+    </script>
+    <title>Blackjack</title>
+</head>
+<body>
+    <h1>BlackJack</h1>
+
+    <div id="playerOne">
+        <h2>Player One</h2>
+        <h3 id="pOneScore">Score: </h3>
+        <div id="pOneCards">
+            <img src="#" alt="a card">
+        </div>
+        <div id="pOneControls">
+            <button onclick="hit(theDeck.pOneCards)">HIT</button>
+            <button onclick="aNewDeck()">NEW DECK</button>
+            <button onclick="show('pOneCards',theDeck.pOneCards)">SHOW CARDS</button>
+            <button onclick="draw()">HIDE CARDS</button>
+        </div>
+
+
+    </div>
+
+    <div id="playerTwo">
+        <h2>Player Two</h2>
+        <h3 id="pTwoScore">Score: </h3>
+        <div id="pTwoCards">
+            <img src="#" alt="a card">
+        </div>
+        <div id="pTwoControls">
+            <button onclick="hit(theDeck.pTwoCards)">HIT</button>
+            <button onclick="aNewDeck()">NEW DECK</button>
+            <button onclick="show('pTwoCards',theDeck.pTwoCards)">SHOW CARDS</button>
+            <button onclick="draw()">HIDE CARDS</button>
+        </div>
+
+
+    </div>
+
+    <a href="#">GitHub Repo</a>
+
+</body>
+</html>
